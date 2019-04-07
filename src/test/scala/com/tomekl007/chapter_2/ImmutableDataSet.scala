@@ -1,11 +1,14 @@
 package com.tomekl007.chapter_2
 
+import com.tomekl007.UserData
 import org.apache.spark.sql.SparkSession
 import org.scalatest.FunSuite
 
 class ImmutableDataSet extends FunSuite {
   val spark: SparkSession = SparkSession
     .builder().master("local[2]").getOrCreate()
+  import spark.sqlContext.implicits._
+
 
   test("Should use immutable DF API") {
     //given

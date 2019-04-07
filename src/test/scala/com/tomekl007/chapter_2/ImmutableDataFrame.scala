@@ -1,5 +1,6 @@
 package com.tomekl007.chapter_2
 
+import com.tomekl007.UserData
 import org.apache.spark.sql.SparkSession
 import org.scalatest.FunSuite
 
