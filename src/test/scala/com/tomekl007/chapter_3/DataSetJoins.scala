@@ -1,13 +1,15 @@
 package com.tomekl007.chapter_3
 
+import com.tomekl007.{UserData, UserTransaction}
 import org.apache.spark.sql.{Dataset, SparkSession}
 import org.scalatest.FunSuite
 
 class DataSetJoins extends FunSuite {
   val spark = SparkSession.builder().master("local[2]").getOrCreate()
+  import spark.sqlContext.implicits._
 
   test("Should inner join two DS") {
-    import spark.sqlContext.implicits._
+
     val userData =
       spark.sparkContext.makeRDD(List(
         UserData("a", "1"),

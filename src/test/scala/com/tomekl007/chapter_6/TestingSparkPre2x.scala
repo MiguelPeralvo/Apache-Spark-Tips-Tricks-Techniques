@@ -1,5 +1,6 @@
 package com.tomekl007.chapter_6
 
+import com.tomekl007.UserTransaction
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{Row, SparkSession}
 import org.scalatest.FunSuite

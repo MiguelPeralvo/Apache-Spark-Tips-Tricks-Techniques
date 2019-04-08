@@ -1,5 +1,6 @@
 package com.tomekl007.chapter_6
 
+import com.tomekl007.UserTransaction
 import org.scalatest.FunSuite
 
 class SeparatingLogic extends FunSuite {

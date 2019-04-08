@@ -1,5 +1,6 @@
 package com.tomekl007.chapter_3
 
+import com.tomekl007.InputRecord
 import org.apache.spark.sql.SparkSession
 import org.scalatest.FunSuite
 

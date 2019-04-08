@@ -1,5 +1,8 @@
 package com.tomekl007.chapter_6
 
+import org.scalacheck.Properties
+import org.scalacheck.Prop.forAll
+
 object PropertyBasedTesting extends Properties("StringType") {
 
   property("length of strings") = forAll { (a: String, b: String) =>

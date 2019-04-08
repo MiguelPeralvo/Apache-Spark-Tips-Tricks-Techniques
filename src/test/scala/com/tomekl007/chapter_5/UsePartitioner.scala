@@ -1,5 +1,6 @@
 package com.tomekl007.chapter_5
 
+import com.tomekl007.UserTransaction
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.{HashPartitioner, RangePartitioner, SparkContext}
 import org.scalatest.FunSuite

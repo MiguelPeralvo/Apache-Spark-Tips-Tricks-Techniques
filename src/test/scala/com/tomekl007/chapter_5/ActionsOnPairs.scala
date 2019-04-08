@@ -1,5 +1,6 @@
 package com.tomekl007.chapter_5
 
+import com.tomekl007.UserTransaction
 import org.apache.spark.SparkContext
 import org.apache.spark.sql.SparkSession
 import org.scalatest.FunSuite

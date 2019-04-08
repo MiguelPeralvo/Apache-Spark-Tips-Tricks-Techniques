@@ -1,10 +1,12 @@
 package com.tomekl007.chapter_3
 
+import com.tomekl007.InputRecord
 import org.apache.spark.sql.SparkSession
 import org.scalatest.FunSuite
 
 class DetectingShuffle extends FunSuite {
   val spark: SparkSession = SparkSession.builder().master("local[2]").getOrCreate()
+  import spark.implicits._
 
   test("should explain plan showing logical and physical with UDF and DF") {
     //given

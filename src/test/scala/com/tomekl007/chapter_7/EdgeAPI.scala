@@ -1,6 +1,7 @@
 package com.tomekl007.chapter_7
 
 import org.apache.spark.SparkContext
+import org.apache.spark.graphx.{Edge, Graph, VertexId}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.SparkSession
 import org.scalatest.FunSuite

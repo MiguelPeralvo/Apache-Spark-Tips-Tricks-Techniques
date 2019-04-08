@@ -1,5 +1,6 @@
 package com.tomekl007.chapter_4
 
+import com.tomekl007.UserTransaction
 import org.apache.spark.sql.SparkSession
 import org.scalatest.{BeforeAndAfterEach, FunSuite}
 
@@ -7,6 +8,7 @@ import scala.reflect.io.Path
 
 class SaveJSON extends FunSuite with BeforeAndAfterEach {
   val spark = SparkSession.builder().master("local[2]").getOrCreate()
+  import spark.implicits._
 
   private val FileName = "transactions.json"
 

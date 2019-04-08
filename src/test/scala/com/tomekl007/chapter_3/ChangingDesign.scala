@@ -1,5 +1,6 @@
 package com.tomekl007.chapter_3
 
+import com.tomekl007.{UserData, UserTransaction}
 import org.apache.spark.sql.{Dataset, SparkSession}
 import org.scalatest.FunSuite
 

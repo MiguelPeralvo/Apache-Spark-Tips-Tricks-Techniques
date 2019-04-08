@@ -1,5 +1,6 @@
 package com.tomekl007.chapter_2
 
+import com.tomekl007.{MultipliedRDD, Record}
 import org.apache.spark.SparkContext
 import org.apache.spark.sql.SparkSession
 import org.scalatest.FunSuite
@@ -11,7 +12,7 @@ class InheritanceRdd extends FunSuite {
 
   test("use extended RDD") {
     //given
-    val rdd = spark.makeRDD(List(Record(1, "d1")))
+    val rdd = spark.makeRDD(List(Record(10, "d1")))
     val extendedRdd = new MultipliedRDD(rdd, 10)
 
     extendedRdd.collect().toList should contain theSameElementsAs List(

@@ -1,11 +1,12 @@
 package com.tomekl007.chapter_6
 
+import com.tomekl007.UserTransaction
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.scalatest.FunSuite
 
 class MockingDataSources extends FunSuite {
   val spark = SparkSession.builder().master("local[2]").getOrCreate()
-
+  import spark.implicits._
 
   ignore("loading data on prod from hive") {
     UserDataLogic.loadAndGetAmount(spark, HiveDataLoader.loadUserTransactions)
